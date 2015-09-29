@@ -1,0 +1,22 @@
+<ul class="social">
+  <li ng-repeat="article in source">
+    <div class="avator">
+      <img ng-src="{{article.avator}}" width="75" class="social-avator">
+    </div>
+    <div class="text">
+      <h2>@{{article.handle}}</h2>
+      <p>{{article.text}}</p>
+    </div>
+    <div class="interaction">
+      <div class="icon">
+        <img src="img/reply.png" />
+      </div>
+      <div class="icon">
+        <img src="img/retweet.png" />
+      </div>
+      <div class="icon">
+        <img src="img/fav.png" />
+      </div>
+    </div>
+  </li>
+</ul>
