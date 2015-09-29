@@ -69,31 +69,31 @@ function PodcastsController($scope) {
   $scope.source = [
     {
       title: 'Johnathan Thurston',
-      image: 'http://www.skyracing.com.au/images/channel_img/bsb.jpg',
+      image: 'img/bsb.jpg',
       date: 'Tue, 29 Sep 2015',
       text: "The Big Sports Breakfast is Sydney's only all-sports breakfast radio program."
     },
     {
       title: 'Paul Gallen',
-      image: 'http://www.skyracing.com.au/images/channel_img/RHQSATURDAY.png',
+      image: 'img/RHQSATURDAY.png',
       date: 'Tue, 29 Sep 2015',
       text: "From 6.30am every Saturday this extensive preview programme is hosted by the ubiquitous Andrew Bensley."
     },
     {
       title: 'Israel Folau',
-      image: 'http://www.skyracing.com.au/images/channel_img/bsb-best.jpg',
+      image: 'img/bsb-best.jpg',
       date: 'Tue, 29 Sep 2015',
       text: "The Big Sports Breakfast is Sydney's only all-sports breakfast radio program."
     },
     {
       title: 'Jacquelin Magnay',
-      image: 'http://www.skyracing.com.au/images/channel_img/punters-post-mortem-150.jpg',
+      image: 'img/punters-post-mortem-150.jpg',
       date: 'Tue, 29 Sep 2015',
       text: "Terry Kennedy is joined by Ron Dufficy and Deane Lester for this Monday review of the racing ..."
     },
     {
       title: 'David Furner',
-      image: 'http://www.skyracing.com.au/images/channel_img/SKY-PRG-On-The-Pace.png',
+      image: 'img/SKY-PRG-On-The-Pace.png',
       date: 'Mon, 28 Sep 2015',
       text: "A fast-moving and up-to-date hour from 9am when host by Andrew Bensley ..."
     }
