@@ -49,18 +49,24 @@ function ListController($scope, $http) {
 function SocialMediaController($scope) {
   $scope.source = [
     {
-      text: 'Congrats to John Mason - John Mason Real Estate who won the #MelbourneCup Raffle Package worth over $5,000!! ',
-      handle: 'WBA',
-      avator: 'https://pbs.twimg.com/profile_images/552022419334918145/GzlOB1Q0_bigger.png'
+      text: 'Johnathan Thurston caps off an incredible season to win a fourth #DallyM. Absolute superstar!',
+      handle: 'TAB',
+      avator: 'https://pbs.twimg.com/profile_images/488500097605312512/sMNsJ659_bigger.jpeg'
     },
     {
-      text: 'Jordon mentioned three-time #MelbourneCup runner-up Red Cadeaux, Ascot Gold Cup winner Trip To Paris, Max Dynamite and Snow Sky.',
-      handle: 'Trent Langskaill',
-      avator: 'https://pbs.twimg.com/profile_images/642269143329214464/izGukNQ8_400x400.jpg'
-    }, {
-      text: '@mehdivk is the best photographer I ever seen in my life :)',
-      handle: 'nathanstreater',
-      avator: 'https://pbs.twimg.com/profile_images/606720698715758592/vIAtDlst_400x400.jpg'
+      text: 'Racing HQ @atc_races Brett Devine with fields, Jason Attard, @VandykeRacing1 Daniel Hanson, Daniel Bowen @mmsnippets Vin Cox, @boss_glen',
+      handle: 'SkySportsRadio1',
+      avator: 'https://pbs.twimg.com/profile_images/2476600160/Sky-Sports-Radio-800_bigger.jpg'
+    },
+    {
+      text: 'Sky Racing expert @JohnScorse has one special at Queanbeyan today, R4 No 6 KENTUCKY DARTER @SkyRacingAU #skytips',
+      handle: 'insiderunningAU',
+      avator: 'https://pbs.twimg.com/profile_images/2600886597/0o5bc79vdrk0mwya4gjr_bigger.jpeg'
+    },
+    {
+      text: 'Morning, everyone! How good is GF week!? In two codes! Join TK and Slats for all the latest, on @SkyRacingAU and @SkySportsRadio1 from 530.',
+      handle: 'skybigsports',
+      avator: 'https://pbs.twimg.com/profile_images/1044335416/BigBreakfast_fb_bigger.jpg'
     }
   ];
 }
