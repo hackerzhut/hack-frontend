@@ -1,0 +1,81 @@
+.podcasts {
+  list-style : none;
+  margin     : 0;
+  padding    : 0;
+}
+
+.podcasts li {
+  display            : block;
+  overflow           : auto;
+  width              : auto;
+  background         : #ffffff;
+  border-radius      : 5px;
+  margin-bottom      : 10px;
+  -webkit-box-shadow : 0px 1px 5px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow    : 0px 1px 5px 0px rgba(0,0,0,0.25);
+  box-shadow         : 0px 1px 5px 0px rgba(0,0,0,0.25);
+}
+
+.podcasts h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 14pt;
+  font-weight: normal;
+  color: #333333;
+  margin-top: 10px;
+}
+
+.podcasts p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  font-size: 12pt;
+  font-weight: normal;
+  color: #757575;
+  margin-top: 5px;
+}
+
+.podcasts .avator {
+  float   : left;
+  width   : 18%;
+  display : inline-block;
+  padding: 1%;
+}
+
+.podcasts .text {
+  width   : 78%;
+  float   : left;
+  padding : 1%;
+  display : inline-block;
+}
+
+.podcasts img {
+  width: 100%;
+  border-radius : 50%;
+}
+
+.podcasts .interaction {
+  width: 100%;
+  border-top: solid 1px #e5e5e5;
+  margin: 10px 0px 10px 0px;
+  padding-top: 10px;
+  float: left;
+}
+.podcasts .interaction a {
+  font-family: 'Roboto';
+  font-size: 13pt;
+  font-weight: normal;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 4px;
+}
+
+.green {
+  color: #008442;
+}
+
+.normal {
+  color: #333333;
+}

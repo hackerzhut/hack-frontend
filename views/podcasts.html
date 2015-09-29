@@ -1,0 +1,16 @@
+<ul class="podcasts">
+  <li ng-repeat="article in source">
+    <div class="avator">
+      <img ng-src="{{article.image}}">
+    </div>
+    <div class="text">
+      <h2>{{article.title}}</h2>
+      <p>{{article.date}}</p>
+      <p>{{article.text}}</p>
+      <a href="#" class="normal"></a>
+    </div>
+    <div class="interaction">
+      <a href="#" class="green">LISTEN NOW</a>
+    </div>
+  </li>
+</ul>
