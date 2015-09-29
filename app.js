@@ -29,29 +29,20 @@ function routes($stateProvider) {
       });
 }
 
-function ListController($scope) {
-  $scope.source = [
-    {
-      title: 'NY Jets v Philadelphia Eagles',
-      image: 'https://d2r5tjv0k7iblp.cloudfront.net/tabcms/34ed00690466e1ff3a9746caeb35595c105fbe24_jetseagles.png',
-      description: 'Philadelphia seems to be in freefall just two games into the season, both of them disappointing losses. A near comeback Week 1 win against the Atlanta Falcons turned into a late-fourth-quarter loss and an underwhelming effort at home against the divisional rival Dallas Cowboys has left Eagles fans demoralized'
-    },
-    {
-      title: 'Arizona Cardinals v San Francisco',
-      image: 'https://d2r5tjv0k7iblp.cloudfront.net/tabcms/8776ba7432bd50bec530c2d908c50035f48a3005_cards49ers.png',
-      description: 'Arizona quarterback Carson Palmer has been on fire so far this season, racking up 492 passing yards and seven touchdowns while leading Arizona to a 2-0 record. Palmer is 15-2 in his last 17 starts sandwiched around the left ACL tear he suffered Week 10 last season.'
-    },
-    {
-      title: 'Detroit Lions v Denver Broncos',
-      image: 'https://d2r5tjv0k7iblp.cloudfront.net/tabcms/3bc4abe74781473aefae1704e1dffbd8cdf22889_lionsbroncos.png',
-      description: 'The Denver ground game hasn’t been anything to write home about so far this season, but facing Detroit’s 28th-ranked rush defense might be just what the doctor ordered for the Broncos.'
-    },
-    {
-      title: 'Packers v Kansas City Chiefs',
-      image: 'https://d2r5tjv0k7iblp.cloudfront.net/tabcms/20af5e198cf3865292f0611c712518394c2df1a1_packerschiefs.png',
-      description: 'The Packers might be susceptible to a letdown game here, having exacted revenge on the Seattle Seahawks in come-from-behind fashion in Week 2.'
-    }
-  ];
+function ListController($scope, $http) {
+  $http.get('https://playstore-backend.herokuapp.com/v1/sports/news', {})
+    .then(function successCallback(response) {
+      $scope.source = [];
+      angular.forEach(response.data, function(post) {
+        $scope.source.push({
+          title: post.heading,
+          description: post.description,
+          image: post.image.url
+        });
+      });
+    }, function errorCallback(response) {
+      //TO-DO
+  });
 }
 
 
